@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Questions</title>
+  </head>
+
+  <body bgcolor="white">
+    <font size ="5" color = "green">
+      <b>
+    <marquee>CHECK YOUR MENTAL STRESS</marquee></b>
+    </font>
+  </body>
+  <body>
+    <you are in {{y}}>
+    <h4> By answering the following questions</h4>
+    <form action="data" method='POST'>
+      {% csrf_token %}
+
+      <p>1.Have you ever had difficulty in concentrating or appeared to have a blank mind?</p>
+      <label>
+        <input type="radio" name="question4" value="STRONGLY AGREE"> A) strongly agree
+      </label>
+      <label>
+        <input type="radio" name="question4" value="AGREE"> B) agree
+      </label>
+      <label>
+        <input type="radio" name="question4" value="NEUTRAL"> C) neutral
+      </label>
+      <label>
+        <input type="radio" name="question4" value="DISAGREE"> D) disagree
+      </label>
+      <label>
+        <input type="radio" name="question4" value="STRONGLY DISAGREE"> E) strongly disagree
+      </label>
+
+      <p>2. When do you feel more stress?</p>
+      <label>
+        <input type="radio" name="When" value="EARLY MORNING"> a) Early morning
+      </label>
+      <label>
+        <input type="radio" name="When" value="AFTERNOON"> b) Afternoon
+      </label>
+      <label>
+        <input type="radio" name="When" value="EVENING"> c) Evening
+      </label>
+      <label>
+        <input type="radio" name="When" value="NIGHT"> d) Night
+      </label>
+
+      <p>3. Do you feel anxiety with your works?</p>
+      <label>
+        <input type="radio" name="question6" value="STRONGLY AGREE"> A) strongly agree
+      </label>
+      <label>
+        <input type="radio" name="question6" value="AGREE"> B) agree
+      </label>
+      <label>
+        <input type="radio" name="question6" value="NEUTRAL"> C) neutral
+      </label>
+      <label>
+        <input type="radio" name="question6" value="DISAGREE"> D) disagree
+      </label>
+      <label>
+        <input type="radio" name="question6" value="STRONGLY DISAGREE"> E) strongly disagree
+      </label>
+
+      <p> 4.Do you feel anxiety with your social life?</p>
+      <label>
+        <input type="radio" name="question7" value="STRONGLY AGREE"> A) strongly agree
+      </label>
+      <label>
+        <input type="radio" name="question7" value="AGREE"> B) agree
+      </label>
+      <label>
+        <input type="radio" name="question7" value="NEUTRAL"> C) neutral
+      </label>
+      <label>
+        <input type="radio" name="question7" value="DISAGREE"> D) disagree
+      </label>
+      <label>
+        <input type="radio" name="question7" value="STRONGLY DISAGREE"> E) strongly disagree
+      </label>
+
+      <p>5. Do you feel anxiety with your personal problems?</p>
+      <label>
+        <input type="radio" name="question8" value="STRONGLY AGREE"> A) strongly agree
+      </label>
+      <label>
+        <input type="radio" name="question8" value="AGREE"> B) agree
+      </label>
+      <label>
+        <input type="radio" name="question8" value="NEUTRAL"> C) neutral
+      </label>
+      <input type="radio" name="question8" value="DISAGREE"> D) disagree
+    </label>
+    <label>
+      <input type="radio" name="question8" value="STRONGLY DISAGREE"> E) strongly disagree
+    </label>
+
+    <p>6. Do you find difficulty to pay attention in class?</p>
+    <label>
+      <input type="radio" name="find" value="STRONGLY AGREE"> A) strongly agree
+    </label>
+    <label>
+      <input type="radio" name="find" value="AGREE"> B) agree
+    </label>
+    <label>
+      <input type="radio" name="find" value="NEUTRAL"> C) neutral
+    </label>
+    <input type="radio" name="find" value="DISAGREE"> D) disagree
+  </label>
+  <label>
+    <input type="radio" name="find" value="STRONGLY DISAGREE"> E) strongly disagree
+  </label>
+
+  <p>7.How much time do you spend for studying in a day?</p>
+  <label>
+    <input type="radio" name="spend" value="0-1 HOURS"> A) 0-1 HOURS
+  </label>
+  <label>
+    <input type="radio" name="spend" value="2-3 HOURS"> B) 2-3 HOURS
+  </label>
+  <label>
+    <input type="radio" name="spend" value="3-4 HOURS"> C) 3-4 HOURS
+  </label>
+  <input type="radio" name="spend" value="4+ HOURS"> D) 4+ HOURS
+</label>
+
+  <p>8. Do you struggle to achieve your passion or goal?</p>
+  <label>
+    <input type="radio" name="goal" value="STRONGLY AGREE"> A) strongly agree
+  </label>
+  <label>
+    <input type="radio" name="goal" value="AGREE"> B) agree
+  </label>
+  <label>
+    <input type="radio" name="goal" value="NEUTRAL"> C) neutral
+  </label>
+  <input type="radio" name="goal" value="DISAGREE"> D) disagree
+</label>
+<label>
+  <input type="radio" name="goal" value="STRONGLY DISAGREE"> E) strongly disagree
+</label>
+
+<p>9.Do you struggle to learn new things?</p>
+<label>
+  <input type="radio" name="learn" value="STRONGLY AGREE"> A) strongly agree
+</label>
+<label>
+  <input type="radio" name="learn" value="AGREE"> B) agree
+</label>
+<label>
+  <input type="radio" name="learn" value="NEUTRAL"> C) neutral
+</label>
+<input type="radio" name="learn" value="DISAGREE"> D) disagree
+</label>
+<label>
+<input type="radio" name="learn" value="STRONGLY DISAGREE"> E) strongly disagree
+</label>
+
+<p>10.Are you satisfied with the quality of your work?</p>
+<label>
+  <input type="radio" name="work" value="STRONGLY AGREE"> A) strongly agree
+</label>
+<label>
+  <input type="radio" name="work" value="AGREE"> B) agree
+</label>
+<label>
+  <input type="radio" name="work" value="NEUTRAL"> C) neutral
+</label>
+<input type="radio" name="work" value="DISAGREE"> D) disagree
+</label>
+<label>
+<input type="radio" name="work" value="STRONGLY DISAGREE"> E) strongly disagree
+</label><br>
+
+<!--script>
+  function submitForm() {
+    // Get the form element
+    const form = document.querySelector('form');
+    // Add a submit event listener to the form
+    form.addEventListener('submit', (event) => {
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Show a window alert
+      window.alert('your are in !!');
+    });
+  }
+</script--->
+
+<!-- Add the function to the submit button -->
+
+<!--button onclick="submitForm()">Submit</button-->
+<button>submit</button>
+
+
+</form>
+
+
+
+</body>
+<style> \
+button{
+  color: blue;
+  animation: fadeInOut 10s ease-in-out infinite;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+h1{
+  font-style: oblique;
+  margin: inherit;
+  position: center;
+  font-size: 30px;
+  margin-left: 150px;
+  color: red;
+}
+h4{
+  font-size: 20px;
+  margin: inherit;
+  font-style: normal;
+}
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f2ecec;
+  background-image: ;
+  border-radius: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+</style>
